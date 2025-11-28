@@ -9,6 +9,6 @@ class Main {
 
 		// Reading user input through terminal
 		final input = Sys.stdin().readLine();
-		trace('Hello ${input}}!');
+		trace('Hello ${input}!');
 	}
 }
