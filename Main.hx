@@ -1,14 +1,15 @@
 package;
 
 class Main {
-	public static function main() {
-		// Printing without using trace, useful to print without a newline character
-		Sys.stdout().writeString('Please type your name: ');
-		// Flush characters to terminal
+	public static function getInput(prompt:String):String {
+		Sys.stdout().writeString(prompt);
 		Sys.stdout().flush();
 
-		// Reading user input through terminal
-		final input = Sys.stdin().readLine();
+		return Sys.stdin().readLine();
+	}
+
+	public static function main() {
+		final input = getInput("Please type your name: ");
 		trace('Hello ${input}!');
 	}
 }
