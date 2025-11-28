@@ -9,7 +9,7 @@ class Main {
 	}
 
 	public static function main() {
-		final apples_wanted = Std.parseInt(getInput("How many apples do you want?: "));
+		final apples_wanted:Int = Std.parseInt(getInput("How many apples do you want?: "));
 
         trace("You want " + apples_wanted + " apples.");
 	}
