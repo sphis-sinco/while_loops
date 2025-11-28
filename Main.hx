@@ -1,9 +1,9 @@
 package;
 
 class Main {
-	public static var LARGE_CRATE_CARRY_AMOUNT:Int = 30;
-	public static var MEDIUM_CRATE_CARRY_AMOUNT:Int = 12;
-	public static var SMALL_CRATE_CARRY_AMOUNT:Int = 6;
+	public static var LARGE_CRATE_CARRY_AMOUNT:Int = 20;
+	public static var MEDIUM_CRATE_CARRY_AMOUNT:Int = 10;
+	public static var SMALL_CRATE_CARRY_AMOUNT:Int = 5;
 
 	public static function getInput(prompt:String):String {
 		Sys.stdout().writeString(prompt);
@@ -48,8 +48,8 @@ class Main {
 			}
 		}
 
-        trace('L: ' + data.large_crates);
-        trace('M: ' + data.medium_crates);
-        trace('S: ' + data.small_crates);
+		trace('L: ' + data.large_crates + ' ($' + data.large_crates * 10 + ')');
+		trace('M: ' + data.medium_crates + ' ($' + data.medium_crates * 5 + ')');
+		trace('S: ' + data.small_crates + ' ($' + data.small_crates * 2.5 + ')');
 	}
 }
